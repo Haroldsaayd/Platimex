@@ -1,14 +1,24 @@
 
-const nombre = document.getElementById("name");
-const correo = document.getElementById("email");
-const mensaje= document.getElementById("opinion");
-const form = document.getElementById("form");
+function validar() {
+    var nombre, correo , texto;
+nombre = document.getElementById("name").value;
+correo = document.getElementById("email").value;
+texto = document.getElementById("text").value;
 
-
-    form.addEventListener("sumbit",e=>{
-        e.preventDefault()
-        if(nombre.value.lenght<3){
-            alert("El campo nombre esta vacio");
-        }
-    })
-
+if(nombre === "" || correo ==="" || texto===""){
+    alert("Todos los campos son obligatorios");
+    return false;
+}
+else if (nombre.lenght>30){
+    alert("El nombre es muy largo");
+    return false;
+}
+else if (correo.lenght>35){
+    alert("El nombre es muy largo");
+    return false;
+}
+else if (texto.lenght>150){
+    alert("El texto es muy largo");
+    return false;
+}
+}

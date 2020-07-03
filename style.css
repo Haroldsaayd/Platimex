@@ -65,7 +65,7 @@ video{width: 100%;
 .logoNavPortada{
   height: 70px;
   width: auto;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-left: 40px;
   position: absolute;
   z-index: 2;
@@ -74,6 +74,9 @@ video{width: 100%;
   list-style: none;
   margin-top: 30px;
   margin-right: 200px;
+  position: absolute;
+  z-index: 3;
+  float: left;
 }
 .enlacesNavPortada li{
   display: inline-block;

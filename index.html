@@ -103,16 +103,16 @@
 </section>
 <!-- SECCION FORMULARIO -->
 <section class="formulario contenedorFormulario" >
-        <form action="" method="POST" id="form">
+        <form action="" id="form">
             <h3>Forma parte de Platimex</h3>
             <p>Postúlate y aplica para una vacante en nuestra empresa. No dejes pasar la oportunidad de formar parte de la empresa de tecnología más inovadora</p>
-            <label for="name"> <p>Nombre:</p></label>
-            <input type="text" class="formulario" placeholder="Escribe tu nombre" id="name">
+            <label for="subject"> <p>Nombre:</p></label>
+            <input type="text" class="formulario" placeholder="Escribe tu nombre" id="subject">
            <label for="email"><p>Correo:</p></label>
             <input type="email" class="formulario" placeholder="Escribe tu correo" id="email">
-            <label for="opinion"><p>Mensaje:</p></label>
-            <textarea class="formulario" name="" id="opinion" cols="30" rows="10"></textarea>
-                <input type="submit" class="botonForm" value="Enviar">
+            <label for="text"><p>Mensaje:</p></label>
+            <textarea class="formulario" name="" id="text" cols="30" rows="10"></textarea>
+                <input type="submit" class="botonForm" value="submit">
         </form>
 </section>
 <!-- SECCION BENEFICIOS -->
@@ -147,16 +147,16 @@
     </div>
     <div class="contactoYdireccion">
         <div class="formularioContactanos">
-            <form class="contactanos" action="">
+            <form class="contactanos" action="" method="POST" onsubmit="return validar();">
                 <h3>Encuentra la opción ideal para tu empresa,contactanos.</h3>
                 <p>En Platimex ofrecemos servicios completos y nos esforzamos por ser lideres en la prestación de servicios.</p>
-                <label for="nombre"> <p>Nombre:</p></label>
-                <input type="text" class="formulario" placeholder="Escribe tu nombre" id="nombre">
-               <label for="correo"><p>Correo:</p></label>
-                <input type="email" class="formulario" placeholder="Escribe tu correo" id="correo">
-                <label for="mensaje"><p>Mensaje:</p></label>
-                <textarea class="formulario" name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" class="botonForm" value="Enviar">
+                <label for="name"> <p>Nombre:</p></label>
+                <input type="text" class="formulario" placeholder="Escribe tu nombre" id="name">
+               <label for="email"><p>Correo:</p></label>
+                <input type="email" class="formulario" placeholder="Escribe tu correo" id="email">
+                <label for="text"><p>Mensaje:</p></label>
+                <textarea class="formulario" name="" id="text" cols="30" rows="10"></textarea>
+                    <input type="submit" class="botonForm" value="submit" required>
             </form>
         </div>
         <div class="ubicacionContactanos">
@@ -195,6 +195,6 @@
     </div>
     </div>
 </section>
-<script src="./script.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
